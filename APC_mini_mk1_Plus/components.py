@@ -4,7 +4,7 @@ playhead and the loop end, and loop buttons of one page each.
 
 v3's `StepSequenceComponent` depends on a `grid_resolution` and its note editor on a
 `sequencer_clip`, which the framework doesn't build: the control surface hands them in
-(`APC_mini_drum_seq._get_additional_dependencies`).
+(`APC_mini_mk1_Plus._get_additional_dependencies`).
 """
 
 from ableton.v3.base import listens

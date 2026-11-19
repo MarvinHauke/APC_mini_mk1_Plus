@@ -1,6 +1,6 @@
-"""A drum step sequencer for the Akai APC mini mk1 on `ableton.v3`, for Live 12.4 or later
-(plan 0003). Select a track with a Drum Rack: the sequencer edits its clip in the selected scene,
-playing or not (in Session view; in Arrangement v3's detail clip; plan 0003 Decision 32, v3
+"""A drum step sequencer for the Akai APC mini mk1 on `ableton.v3`, for Live 12.4
+(tested with 12.4.16; plan 0003). Select a track with a Drum Rack: the sequencer edits its
+clip in the selected scene, playing or not (in Session view; in Arrangement v3's detail clip; plan 0003 Decision 32, v3
 would take a playing clip first).
 
 - Top four rows: 32 steps of the selected drum pad, step 1 top left. A press sets or clears a
@@ -62,10 +62,10 @@ class Specification(ControlSurfaceSpecification):
 
 def create_instance(c_instance):
     """Live calls this once when the script is chosen as a Control Surface."""
-    return APC_mini_drum_seq(specification=Specification, c_instance=c_instance)
+    return APC_mini_mk1_Plus(specification=Specification, c_instance=c_instance)
 
 
-class APC_mini_drum_seq(ControlSurface):
+class APC_mini_mk1_Plus(ControlSurface):
     def _get_additional_dependencies(self):
         """What v3's step sequencer depends on and the framework doesn't build. The framework
         calls each value to get the dependency, so each is wrapped in `const`."""

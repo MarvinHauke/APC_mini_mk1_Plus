@@ -5,7 +5,7 @@ the elements' names in snake case.
 Plan 0003 steps 1-4: the steps, the pad bank and its scrolling, the track buttons as loop
 buttons, the resolution, the track choice and the faders; step 5 (Decisions 29-30): the
 resolution one step finer or coarser or on its own pad, and the scene choice. The pad bank is
-also the steps' pitch provider, which the mappings can't express; `APC_mini_drum_seq.setup`
+also the steps' pitch provider, which the mappings can't express; `APC_mini_mk1_Plus.setup`
 sets it.
 """
 

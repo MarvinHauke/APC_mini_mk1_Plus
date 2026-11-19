@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+# rig run results
+checks.result.json
+# type stubs of a Live build: generated from Ableton's code, stay local
+/stubs/

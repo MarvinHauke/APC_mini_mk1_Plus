@@ -1,0 +1,6 @@
+{
+  "include": ["APC_mini_mk1_Plus"],
+  "pythonVersion": "3.11",
+  "stubPath": "stubs",
+  "reportMissingModuleSource": false
+}
