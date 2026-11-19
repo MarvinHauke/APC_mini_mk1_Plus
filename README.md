@@ -44,11 +44,17 @@ This repo is written with ableton-remote-script-mcp and is its real-world test f
 holds it as a submodule. Plan and decision numbers in comments (such as "plan 0003 Decision 32")
 refer to the plans in that repo's `docs/feature-plans/`.
 
-- **Editor completion:** `ableton-remote-script-mcp build-stubs --build 12.4.16 --out stubs`
-  writes type stubs of your Live build into `stubs/`, which `pyrightconfig.json` uses. The stubs
-  are made from Ableton's code, so they are git-ignored and stay on your machine.
+- **Editor completion:** in your clone of ableton-remote-script-mcp, after
+  `uv run ableton-remote-script-mcp build-index`, run
+  `uv run ableton-remote-script-mcp build-stubs --build 12.4.16 --project path/to/APC_mini_mk1_Plus`
+  (this repo's root). It writes type stubs of your Live build into `stubs/` and keeps the
+  existing `pyrightconfig.json` and ignore line. The stubs are made from Ableton's code, so they
+  are git-ignored and stay on your machine.
+  [Editor setup](https://marvinhauke.github.io/ableton-remote-script-mcp/editor-setup/) has the
+  editor configuration.
 - **Test rig:** `APC_mini_mk1_Plus/checks.yaml` and `device.yaml` are for the tool's test rig
-  (`ableton-remote-script-mcp rig run APC_mini_mk1_Plus/checks.yaml`). Live ignores both files.
+  (in the clone: `uv run ableton-remote-script-mcp rig run path/to/APC_mini_mk1_Plus/APC_mini_mk1_Plus/checks.yaml`).
+  Live ignores both files.
 
 ## Licence
 
