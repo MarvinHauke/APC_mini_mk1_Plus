@@ -2,7 +2,7 @@
 
 A MIDI Remote Script for the **Akai APC mini mk1** in Ableton Live 12.4, built on Live's
 `ableton.v3` framework and tested with Live 12.4.16. Its first mode is a drum step sequencer; more functions for the
-same controller will follow. One controller, one repo.
+same controller will follow.
 
 Not affiliated with Akai Professional or Ableton. "APC" is Akai's trademark, named here only to
 say which controller the script is for.
