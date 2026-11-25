@@ -46,11 +46,11 @@ class StepResolutionComponent(GridResolutionComponent):
     coarser_button = ButtonControl(color="NoteEditor.Resolution.Step",
                                    pressed_color="NoteEditor.Resolution.StepPressed")
 
-    @finer_button.pressed
+    @finer_button.pressed  # pyright: ignore[reportGeneralTypeIssues]
     def finer_button(self, _):
         self.index = max(self.index - 1, 0)
 
-    @coarser_button.pressed
+    @coarser_button.pressed  # pyright: ignore[reportGeneralTypeIssues]
     def coarser_button(self, _):
         self.index = min(self.index + 1, len(self._resolutions) - 1)
 
